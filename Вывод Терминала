@@ -1,0 +1,75 @@
+Last login: Sun Jan 22 22:37:46 on ttys000
+valeriaurkova@MacBook-Air-Valeria ~ % cd /Users/valeriaurkova/Documents/kata/webcore-project
+valeriaurkova@MacBook-Air-Valeria webcore-project % git init
+Reinitialized existing Git repository in /Users/valeriaurkova/Documents/kata/webcore-project/.git/
+valeriaurkova@MacBook-Air-Valeria webcore-project % ls -a
+.	..	.git
+valeriaurkova@MacBook-Air-Valeria webcore-project % cd .git/
+valeriaurkova@MacBook-Air-Valeria .git % ls
+HEAD		description	info		refs
+config		hooks		objects
+valeriaurkova@MacBook-Air-Valeria .git % cd ..
+valeriaurkova@MacBook-Air-Valeria webcore-project % ls
+valeriaurkova@MacBook-Air-Valeria webcore-project % ls -a
+valeriaurkova@MacBook-Air-Valeria webcore-project % git config user.name "Aileron"
+valeriaurkova@MacBook-Air-Valeria webcore-project % 
+valeriaurkova@MacBook-Air-Valeria webcore-project % git config user.email "iurkovavv06@mail.ru"
+valeriaurkova@MacBook-Air-Valeria webcore-project % clear
+
+
+
+
+
+
+
+
+valeriaurkova@MacBook-Air-Valeria webcore-project % /Users/valeriaurkova/Documents/kata/webcore-project
+zsh: permission denied: /Users/valeriaurkova/Documents/kata/webcore-project
+valeriaurkova@MacBook-Air-Valeria webcore-project % nano text.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  GNU nano 2.0.6                        File: text.txt                                             Modified  
+
+Hello Git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                [ New File ]
+^G Get Help       ^O WriteOut       ^R Read File      ^Y Prev Page      ^K Cut Text       ^C Cur Pos
+^X Exit           ^J Justify        ^W Where Is       ^V Next Page      ^U UnCut Text     ^T To Spell

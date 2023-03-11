@@ -1,0 +1,336 @@
+html, 
+::after,  
+::before {
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;  height: 100%;
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  line-height: 20px;
+  color: #1B1C21;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* border: 1px dashed blue; */
+
+
+body {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+/* border: 1px dashed blue; */
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.page-nav {
+  height: 87px;
+  border-bottom: 1px solid #D9FFF5;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-nav__icon {
+   margin-right: 16px;
+ }
+
+.page-nav__icon:last-child {
+    margin-right: 0;
+  }
+
+.page-nav--padding--16 {
+    padding: 16px;
+  }
+
+.only-lg {
+  display: none;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #FF3E79;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+/* БУРГЕР */
+
+.icon__burger {
+  display: block;
+  margin: auto;
+}
+
+.burger__line {
+  height: 2px;
+  background-color: #fff;
+  border-radius: 1px;
+  border-color: transparent;
+  margin-bottom: 5px;
+}
+
+.burger__line--line--top {
+  width: 18px;
+}
+
+.burger__line--line--middle {
+  width: 10px;
+}
+
+.burger__line--line--bottom {
+  width: 14px;
+  margin-bottom: 0;
+}
+
+.logo {
+  border: none;
+  background-color: #fff;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-head {
+  margin-bottom: 1px;
+}
+
+/* БОКОВОЕ МЕНЮ  НАЧАЛО*/
+/* .side-menu {
+  width: 320px;
+  height: 100%;
+  position: absolute;
+  left: -320px;
+  z-index: 1;
+  background-color: #fff;
+  /* display: none;
+} */
+
+
+/* .icon--side-menu:hover .side-menu {
+  /* display: block; */
+  /* left: 0; 
+  transform: translateX(300px);
+  transition-duration: 0.2s;
+}
+
+.icon--side-menu:hover .burger__line--line--top {
+  transform: scale(1.5) translateY(-3px) rotate(45deg);
+  transform-origin: 0 0;
+  transition-duration: 0.2s;
+}
+.icon--side-menu:hover .burger__line--line--middle {
+  transform: scale(0);
+  transform-origin: 0 0;
+  transition-duration: 0.2s;
+} */
+
+
+/* БОКОВОЕ МЕНЮ  КОНЕЦ*/
+
+
+/* ЧЕРЕЗ АНИМАЦИЮ ЗАДАТЬ ИЗМЕНЕНИЕ ШИРИНЫ:
+animation-name: cross-bottom; 
+@keyframes cross-bottom {
+  o% {
+    width: 14px;
+  }
+  100% {
+    width: 300px;
+  }
+} */
+
+
+
+/* ОСНОВНОЕ СОДЕРЖАНИЕ */
+
+.main {
+  background-color: #F8F8F8;
+  height: 100%;
+}
+
+.main__div {
+  padding-top: 24px;
+  padding-left: 16px;
+  padding-bottom: 42px;
+}
+
+.active-page::before {
+  position: absolute;
+  left: 0;
+  width: 4px;
+  height: 40px;
+  content: '';
+  background: url('images/highlight.svg');
+  vertical-align: middle;
+}
+
+.main-heading {
+  height: 40px;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.navigation__nav {
+  margin-top: 24px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  justify-content: space-between;
+}
+
+/* было для nav__items   */
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  /* border: 1px solid gray; */
+  white-space: nowrap;
+  margin-right: 16px;
+  tabindex: 0;
+  /* tabindex не чинит навигацию в Safari! */
+}
+
+.nav-item__link:focus,
+.nav-item__link:hover {
+  border-radius: 6px;
+  border: 2px solid #B8FFEC;
+  background-color: #fff;
+}
+
+/* Прописываю ховер и фокус для ссылки -
+  смешивается мой цвет границы и браузера
+  Прописываю ховер и фокус для nav-item -
+  мои настройки игнорируются */
+
+/* Оформила ховер/фокус для ссылки -
+  она остается активна до следующего нажатия
+  Видно, на какой мы странице */
+
+.nav-item__link {
+  text-decoration: none;
+  color: #7E7E82;
+  padding: 6px;
+  border: 2px solid transparent;
+}
+
+.gradient {
+  width: 24px;
+  height: 40px;
+  content: '';
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+  position: absolute;
+  right: 0;
+  top: 176px;
+}
+
+.main__reviews {
+  margin-left: 40px;
+  color: #7E7E82;
+}
+
+
+/* ARTICLE */
+
+.main__content {
+  margin-top: 24px;
+  display: flex;
+}
+
+.main__section {
+  margin-right: 48px;
+  width: 50%;
+}
+/* а нужно ли марджин-райт? */
+
+.main__aside {
+  width: 50%;
+}
+
+.description__text {
+  margin-bottom: 16px;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  font-weight: thin;
+}
+
+.text-button {
+  background: inherit;
+  border: 0;
+  font-size: 16px;
+  font-weight: thin;
+}
+
+.description__more-button::before {
+  content: '';
+  background: url('images/expand.svg');
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 8px;
+}
+
+.description__more-button {
+  height: 24px;
+  letter-spacing: -0.2px;
+  margin-bottom: 16px;
+  padding: 5px;
+  padding-right: 10px;
+}
+
+.description__more-button--rotate::before {
+  transform: rotate(180deg);
+}
+
+.aside__logo {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-left: -16px;
+  margin-right: -16px;
+  /* margin-right: 25px; */
+}

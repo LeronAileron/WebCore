@@ -1,0 +1,165 @@
+/* ДЛЯ ПЛАНШЕТА И НОУТА */
+@media (min-width: 769px) {
+  .brands {
+    flex-wrap: wrap;
+  }
+  .brands--hide--mac{
+    display: none;
+  }
+  .gradient {
+    display: none;;
+  }
+}
+
+
+/* ДЛЯ НОУТА!! -mac-*/
+@media (min-width: 1120px) {
+    .gradient,
+     .page-nav--large--hidden {
+      visibility: hidden;
+    }
+    .nav {
+      overflow-x: auto;
+    }
+    .tools,
+    .search,
+    .only-lg {
+      visibility: visible;
+      margin-top: 50px;
+      margin-left: 10px;
+    }
+    .tools {
+      margin-right: 32px;
+    }
+    .only-lg {
+      display: inline-block;
+    }
+    .main {
+      margin-top: -87px;
+    }
+    .main__div {
+      padding-top: 42px;
+    }
+    .page-nav--padding {
+      padding: 34px;
+    }
+    .brands {
+      box-sizing: border-box;      
+    }
+    .swiper {
+      max-width: 1130px;
+    }
+    .brands__brand {
+      margin-right: 32px;
+    }
+    .brands::after {
+      content: '';
+      width: 240px;
+      /* height: 72px; */
+      /* background-color: plum; */
+      margin-right: 24px;
+      border: 1px solid transparent;
+    }
+  }
+  
+  /* ДЛЯ ПЛАШЕТА!! -ipad- */
+  @media ((min-width: 769px) and (max-width: 1119px)) {
+    .text--visible--lg,
+    .main__reviews {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+    .main__div {
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+    .page-nav--padding {
+      padding: 24px;
+    }
+    .brands {
+      /* .swiper { */
+      padding: 24px;  
+      /* padding-right: 24px;  */
+      max-width: 1030px;
+      box-sizing: border-box;
+      /* background-color: red; */
+    }
+    .swiper {
+      max-width: 830px;
+    }
+    .brands__brand {
+      width: 224px;
+      min-width: 224px;
+      margin-right: 24px;
+    }
+    /* не хочет применяться */
+    .brands__brand:nth-of-type(3n) {
+      margin-right: 0;
+    }
+    .brands::after {
+      content: '';
+      width: 224px;
+      margin-right: 24px;
+    }
+    .brands--hide--ipad {
+      display: none;
+    }
+  }
+  
+  /* ДЛЯ МОБИЛКИ!! */
+  @media (max-width: 768px) {
+     .phone {
+      display: none;
+     }
+     .message {
+     display: none;
+     }
+     .profile {
+      display: none;
+     }
+     /* а я ничего нанами не потеряю? */
+     .divider-1 {
+       display: none;
+     }
+     .aside__logo {
+       border-radius: 0;
+     }
+     .text--visible--md,
+     .text--visible--lg,
+     .main__reviews {
+       position: absolute;
+       width: 1px;
+       height: 1px;
+       margin: -1px;
+       border: 0;
+       padding: 0;
+       clip: rect(0 0 0 0);
+       overflow: hidden;
+     }
+     .section {
+       width: 100%;
+     }
+     .aside {
+       width: 100%;
+     }
+     .main__content {
+       display: block;
+     }
+     .text {
+       line-height: 18px;
+     }
+     .see-more,
+     .see-less {
+      display: none;
+     }
+     .section-header {
+      white-space: wrap;
+      height: 80px;
+     }
+   }
