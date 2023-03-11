@@ -1,3 +1,5 @@
 Hello Git
 
 Deleted some lines in newbranch after "commit - 1"
+and line for commit - 4
+
